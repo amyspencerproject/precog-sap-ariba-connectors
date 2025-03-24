@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precog Source UI</title>
+    <link rel="stylesheet" type="text.css" href="./scss/_normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/fonts.css" />
+    <link rel="stylesheet" href="./scss/fontawesome-all.css" />
+    <link rel="stylesheet" href="./scss/google.css" />
+  </head>
+  <body>
+    <div class="Page">
+      <div class="PipelineCreatePage">
+        <div class="Container"><h1>Connect to SAP Ariba Analytical</h1></div>
+        <div class="Container">
+          <div class="SourceAdd">
+            <div class="Group">
+              <button class="Button" type="button">
+                <i class="Icon fas fa-arrow-left"></i>Back
+              </button>
+            </div>
+            <div class="ConnectorForm">
+              <p><p>
+                Navigate to the
+                <a href="https://developer.ariba.com"
+                  >Ariba developer login</a
+                >
+                and sign in. Click "Manage" (bottom icon on the left).
+                Click the + button next to the search field. Set the
+                "Application Name" and
+                "Description" to <strong>Precog</strong> then click
+                "Submit". Click "Actions" then click "Request API Access".
+                Select "Analytical Reporting" then select your Realm and
+                click "Submit". You may need to wait 12 hours for this
+                request to be approved.
+              </p>
+              <p>
+                Once approved click "Actions" then click "Generate OAuth
+                Secret". Copy the <strong>Application Key</strong>,
+                <strong>OAuth Client Id</strong> and
+                <strong>OAuth Secret</strong> and paste these credentials in the configuration form below.
+              </p></p>
+              <div class="KindForm">
+                <label class="Field"
+                  ><div class="Field-label">API Host</div>
+                  <div class="Field-description">
+                    <p>
+                      If you are using the EU data center set to
+                      <code>api-eu.ariba.com</code>.
+                    </p>
+                  </div>
+                  <input
+                    class="Input"
+                    type="text"
+                    placeholder="api.ariba.com" /></label
+                ><label class="Field"
+                  ><div class="Field-label">OpenAPI Host</div>
+                  <div class="Field-description">
+                    <p>
+                      If you are using the EU data center set to
+                      <code>eu.openapi.ariba.com</code>.
+                    </p>
+                  </div>
+                  <input
+                    class="Input"
+                    type="text"
+                    placeholder="openapi.ariba.com" /></label
+                ><label class="Field"
+                  ><div class="Field-label">Application Key</div>
+                  <div class="Field-description">
+                    
+                    <!-- <p>Paste your <strong>Application Key</strong> below.</p> -->
+                  </div>
+                  <input class="Input" type="password" placeholder="" /></label
+                ><label class="Field"
+                  ><div class="Field-label">OAuth Client Id</div>
+                  <input class="Input" type="text" placeholder="" /></label
+                ><label class="Field"
+                  ><div class="Field-label">OAuth Secret</div>
+                  <input class="Input" type="password" placeholder="" /></label
+                ><label class="Field"
+                  ><div class="Field-label">Realm</div>
+                  <div class="Field-description">
+                    <p>The name of your Realm.</p>
+                  </div>
+                  <input class="Input" type="text" placeholder="" /></label
+                ><label class="Field"
+                  ><div class="Field-label">Start Date</div>
+                  <div class="Field-description">
+                    <p>
+                      Start date in format YYYY-MM-DD e.g. 20250101.
+                    </p>
+                  </div>
+                  <input class="Input" type="text" placeholder=""
+                /></label>
+              </div>
+              <div class="Group">
+                <div class="ButtonGroup">
+                  <button class="Button" type="button">
+                    <i class="Icon fas fa-plus"></i>Create source
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
