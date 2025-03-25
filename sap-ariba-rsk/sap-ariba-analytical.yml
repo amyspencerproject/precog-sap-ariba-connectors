@@ -1,0 +1,272 @@
+id: SAP Ariba Analytical@2.0.0
+description: Allows connecting to SAP Ariba Analytical
+icon:
+  format: svg
+  data: PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDkuNSIgaGVpZ2h0PSI0NSIgdmlld0JveD0iLTE3LjUgMCAxMDkuNSA0NSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjQ1LjUwMyIgeTE9IjQ0Ljk4NSIgeDI9IjQ1LjUwMyIgeTI9Ii0uMDE0IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIC0uMDIgNDQuOTg1KSI+PHN0b3Agb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojMDBhZWVmIi8+PHN0b3Agb2Zmc2V0PSIuMjEyIiBzdHlsZT0ic3RvcC1jb2xvcjojMDA5N2RjIi8+PHN0b3Agb2Zmc2V0PSIuNTE5IiBzdHlsZT0ic3RvcC1jb2xvcjojMDA3Y2M1Ii8+PHN0b3Agb2Zmc2V0PSIuNzkyIiBzdHlsZT0ic3RvcC1jb2xvcjojMDA2Y2I4Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojMDA2NmIzIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI2EpIiBkPSJNMCA0NWg0NS45NzVMOTAuOTY2IDBIMHY0NSIvPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik01My45ODQgOUg0NWwuMDMgMjEuMTMtNy44MjMtMjEuMTM3SDI5LjQ1bC02LjY3OCAxNy42NTNjLS43MS00LjQ5My01LjM1NC02LjA0Mi05LjAwOC03LjIwNC0yLjQxMy0uNzc1LTQuOTc1LTEuOTE1LTQuOTQ4LTMuMTc1LjAyLTEuMDM0IDEuMzctMS45OTMgNC4wNTMtMS44NSAxLjguMDk3IDMuMzkuMjQyIDYuNTUzIDEuNzdsMy4xMS01LjQyQzE5LjY0OCA5LjMgMTUuNjYgOC4zNzMgMTIuMzkgOC4zN2gtLjAyYy0zLjgxMyAwLTYuOTg4IDEuMjM1LTguOTU2IDMuMjctMS4zNzIgMS40Mi0yLjExMiAzLjIyNi0yLjE0MiA1LjIyMy0uMDUgMi43NDguOTU3IDQuNjk2IDMuMDczIDYuMjUzIDEuNzg3IDEuMzEgNC4wNzQgMi4xNTkgNi4wOSAyLjc4NCAyLjQ4NC43NyA0LjUxNSAxLjQzOSA0LjQ4OSAyLjg2NWEyLjExNCAyLjExNCAwIDAgMS0uNTkgMS4zOThjLS42Mi42NDEtMS41NjkuODgtMi44ODUuOTA2LTIuNTM3LjA1NC00LjQxNy0uMzQ2LTcuNDEzLTIuMTE2bC0yLjc2NiA1LjQ5QzQuMjYzIDM2LjE0NiA3LjQ0IDM3IDExLjA1IDM3bC44MTMtLjAwNmMzLjE0Mi0uMDU3IDUuNjkyLS44MTEgNy43MTgtMi40MzkuMTE2LS4wOTQuMjItLjE4OC4zMjgtLjI4M2wtLjM0IDEuNzUyTDI3LjE0OCAzNmwxLjM1OS0zLjQ4MmMxLjQzMS40ODggMy4wNTcuNzU4IDQuNzgyLjc1OCAxLjY4MyAwIDMuMjY1LS4yNTYgNC42NjctLjcxNUwzOC45MDUgMzZsMTMuNi4wMTQuMDMzLTcuOTM4aDIuODk1YzYuOTk1IDAgMTEuMTMtMy41NiAxMS4xMy05LjUzQzY2LjU2IDExLjg5NiA2Mi41NCA5IDUzLjk4NCA5ek0zMy4yOSAyNy4wNjNhOC4xNTQgOC4xNTQgMCAwIDEtMi44NjgtLjUwMmwyLjgzNi04Ljk1NmguMDU2bDIuNzkgOC45OGMtLjg0MS4zLTEuNzk4LjQ3OC0yLjgxNC40Nzh6bTIxLjIyLTUuMTQ2aC0xLjk3NFYxNC43aDEuOTc2YzIuNjMgMCA0LjcyOS44NzYgNC43MjkgMy41NjItLjAwMiAyLjc4LTIuMSAzLjY1NS00LjcyOSAzLjY1NSIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoOTJ2NDVIMFYweiIvPjwvc3ZnPg==
+configSchema:
+  API Host:
+    fieldDescription: If you are using the EU data center set to 'api-eu.ariba.com'.
+    sensitive: false
+    exampleValue: api.ariba.com
+  OpenAPI Host:
+    fieldDescription: If you are using the EU data center set to 'eu.openapi.ariba.com'
+    sensitive: false
+    exampleValue: openapi.ariba.com
+  Application Key:
+    fieldDescription: >-
+      Go to https://developer.ariba.com and sign in. Click 'Manage' (bottom icon on the left). Click the + button next to the search field. Set 'Application Name' and 'Description' to 'Precog Analytical' then click 'Submit'. Click 'Actions' then click 'Request API Access'. Select 'Analytical Reporting' then select your realm and click 'Submit'. You may need to wait 12 hours for this request to be approved.
+
+
+      Once approved click 'Actions' then click 'Generate OAuth Secret'. Copy the 'Application Key', 'OAuth Client Id' and 'OAuth Secret'.
+    sensitive: true
+  OAuth Client Id:
+    fieldDescription: ""
+    sensitive: false
+  OAuth Secret:
+    fieldDescription: ""
+    sensitive: true
+  Realm:
+    fieldDescription: The name of your Realm.
+    sensitive: false
+  Start Date:
+    fieldDescription: Start date in format YYYY-MM-DD, or empty to select all
+    sensitive: false
+naming:
+  type: singleField
+  fieldName: Realm
+config:
+  metadata:
+    debug: true
+    network-retry:
+      retries: 5
+      maxWait: 600
+      initialDelay: 30
+  limits:
+    - name: new
+      function:
+        name: countingMaxPerMilliSec
+        args:
+          - "1"
+          - "2000"
+    - name: create_view_template
+      function:
+        name: countingMaxPerMilliSec
+        args:
+          - "2"
+          - "60000"
+    - name: start_job
+      function:
+        name: countingMaxPerMilliSec
+        args:
+          - "2"
+          - "480000"
+    - name: check_job_status
+      function:
+        name: countingMaxPerMilliSec
+        args:
+          - "1"
+          - "600000"
+    - name: fetch_file
+      function:
+        name: countingMaxPerMilliSec
+        args:
+          - "1"
+          - "150000"
+  transformers:
+    - name: preauth_on_expired
+      preauthwhere:
+        expr: '{{expires_at}} <= now("{epoch-secs}")'
+    - name: reauth_on_401_403
+      reauthwhere:
+        expr: ({{status_code}} == 401) || ({{status_code}} == 403)
+        select:
+          - name: status_code
+            type: status
+    - name: retry_on_500
+      retrywhere:
+        expr: "{{status_code}} == 500"
+        select:
+          - name: status_code
+            type: status
+    - name: retry_on_502_503
+      retrywhere:
+        expr: ({{status_code}} == 502) || ({{status_code}} == 503)
+        select:
+          - name: status_code
+            type: status
+    - name: retry_on_502_503_504
+      retrywhere:
+        expr: ({{status_code}} == 502) || ({{status_code}} == 503) || ({{status_code}} == 504)
+        select:
+          - name: status_code
+            type: status
+    - name: retry_on_500_502_503
+      retrywhere:
+        expr: ({{status_code}} == 500) || ({{status_code}} == 502) || ({{status_code}} == 503)
+        select:
+          - name: status_code
+            type: status
+    - name: retry_on_not_200
+      retrywhere:
+        expr: not({{status_code}} == 200)
+        select:
+          - name: status_code
+            type: status
+    - name: fail_on_400
+      failwhere:
+        expr: "{{status_code}} == 400"
+        select:
+          - name: status_code
+            type: status
+    - name: fail_with_solution_on_500
+      failwhere:
+        expr: "{{status_code}} == 500"
+        select:
+          - name: status_code
+            type: status
+        solutions:
+          - message: '"Your SAP Ariba data contains bytes which are causing the SAP Ariba API to experience internal errors. Please reach out to SAP Ariba support quoting the name of this dataset and asking for the name of the fields which are causing this problem. When they send you these fields please forward them to Precog support and we will reload this dataset for you."'
+  deps:
+    - from:
+        - env
+      to:
+        - auth
+      select:
+        - name: basicAuth
+          expr: base64({{OAuth Client Id}} + (":" + {{OAuth Secret}}))
+    - from:
+        - auth
+      to:
+        - analytic_reference
+      select:
+        - name: accessToken
+          authy: true
+          type: string
+          path: $.access_token
+        - name: expires_in
+          type: number
+          path: $.expires_in
+        - name: expires_at
+          expr: (now("{epoch-secs}") - 100) + {{expires_in}}
+    - from:
+        - analytic_reference
+      to:
+        - analytical
+      select:
+        - name: documentType
+          type: string
+          path: $[:_].documentType
+    - from:
+        - analytical
+      to:
+        - random
+      select:
+        - name: selectFieldNames
+          expr: concat({{name}}, "\",\"")
+          select:
+            - name: name
+              path: $.selectFields[:_].name
+              type: string
+    - from:
+        - random
+      to:
+        - create_view_template
+      select:
+        - name: random
+          type: string
+          path: $.random
+    - from:
+        - create_view_template
+      to:
+        - windowing_full
+      loadtype: initial
+      select:
+        - name: status
+          type: string
+          path: $.status
+      selectwhere: not({{Start Date}} == "") && not(contains({{documentType}}, "Dim"))
+    - from:
+        - create_view_template
+      to:
+        - start_job
+      loadtype: initial
+      select:
+        - name: viewTemplateName
+          type: string
+          path: $.viewTemplateName
+        - name: windowingFilters
+          expr: '"{}"'
+      selectwhere: ({{Start Date}} == "") || contains({{documentType}}, "Dim")
+    - from:
+        - create_view_template
+      to:
+        - windowing_delta
+      loadtype: delta
+      select:
+        - name: status
+          type: string
+          path: $.status
+    - from:
+        - windowing_full
+        - windowing_delta
+      to:
+        - start_job
+      select:
+        - name: windowingFilters
+          type: string
+          path: $[:_]
+    - from:
+        - start_job
+        - start_job_paginate
+      to:
+        - check_job_status
+      select:
+        - name: job_id
+          type: string
+          path: $.jobId
+        - name: correlation_id
+          expr: '"0"'
+    - from:
+        - check_job_status
+      to:
+        - start_job_paginate
+      select:
+        - name: page_token
+          type: string
+          path: $.pageToken
+        - name: job_status
+          type: string
+          path: $.status
+      selectwhere: '{{job_status}} == "completed"'
+    - from:
+        - check_job_status
+      to:
+        - check_job_status
+      select:
+        - name: job_status
+          type: string
+          path: $.status
+        - name: correlation_id
+          type: header
+          headername: X-Ariba-CorrelationId
+      selectwhere: ({{job_status}} == "pending") || ({{job_status}} == "processing")
+    - from:
+        - check_job_status
+      to:
+        - get_zip
+      select:
+        - name: file
+          type: string
+          path: $.files[:_]
+        - name: job_status
+          type: string
+          path: $.status
+      selectwhere: '{{job_status}} == "completed"'
+    - from:
+        - get_zip
+      to:
+        - get_zip_redirect
+      select:
+        - name: redirect_url
+          type: header
+          headername: Location

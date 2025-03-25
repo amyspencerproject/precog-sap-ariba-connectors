@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Precog Source UI</title>
+    <title>Precog SAP Ariba Connector Example</title>
     <link rel="stylesheet" type="text.css" href="./scss/_normalize.css" />
     <link rel="stylesheet" href="./scss/main.css" />
     <link rel="stylesheet" href="./scss/fonts.css" />
@@ -48,25 +48,25 @@
                   <div class="Field-description">
                     <p>
                       If you are using the EU data center set to
-                      <code>api-eu.ariba.com</code>.
+                      <code>api-eu.ariba.com</code>. Otherwise set to <code>api.ariba.com</code>.
                     </p>
                   </div>
                   <input
                     class="Input"
                     type="text"
-                    placeholder="api.ariba.com" /></label
+                    placeholder="" /></label
                 ><label class="Field"
                   ><div class="Field-label">OpenAPI Host</div>
                   <div class="Field-description">
                     <p>
                       If you are using the EU data center set to
-                      <code>eu.openapi.ariba.com</code>.
+                      <code>eu.openapi.ariba.com</code>. Otherwise set to <code>openapi.ariba.com</code>.
                     </p>
                   </div>
                   <input
                     class="Input"
                     type="text"
-                    placeholder="openapi.ariba.com" /></label
+                    placeholder="" /></label
                 ><label class="Field"
                   ><div class="Field-label">Application Key</div>
                   <div class="Field-description">
@@ -90,7 +90,7 @@
                   ><div class="Field-label">Start Date</div>
                   <div class="Field-description">
                     <p>
-                      Start date in format YYYY-MM-DD e.g. 20250101.
+                      Start date in format YYYY-MM-DD e.g. 20250101. If left blank all dates will be selected.
                     </p>
                   </div>
                   <input class="Input" type="text" placeholder=""
